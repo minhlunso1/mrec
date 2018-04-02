@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="line">1dp</dimen>
+    <dimen name="btn_sell_size">82dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="item_height">226dp</dimen>
+    <dimen name="item_img_height">186dp</dimen>
+    <dimen name="rl_btm_height">40dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="item_margin_large">16dp</dimen>
+    <dimen name="item_margin_less">5dp</dimen>
+</resources>

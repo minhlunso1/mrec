@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:layout_margin="@dimen/item_margin_less">
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_img_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/imgSoldOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgItem"
+        app:layout_constraintVertical_bias="0.0"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/badge_soldout" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgItem"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Item Name" />
+
+    <RelativeLayout
+        android:id="@+id/rlBtm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/rl_btm_height"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgItem">
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:src="@drawable/icon_like"/>
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgLike"
+            android:layout_marginLeft="@dimen/item_margin_less"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            tools:text="10"/>
+        <ImageView
+            android:id="@+id/imgComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvLike"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:src="@drawable/icon_comment"/>
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgComment"
+            android:layout_marginLeft="@dimen/item_margin_less"
+            android:layout_marginRight="@dimen/item_margin_less"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            tools:text="10"/>
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvComment"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/item_margin"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            tools:text="$ 1000"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

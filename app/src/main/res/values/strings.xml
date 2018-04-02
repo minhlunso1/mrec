@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mercari</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_men">Men</string>
+    <string name="label_all">All</string>
+    <string name="label_women">Women</string>
+    <string name="action_sell">Sell</string>
+</resources>
